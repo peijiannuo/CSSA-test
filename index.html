@@ -7,9 +7,9 @@
         <h2>Movie List</h2>
         <table id = "tb1" border = "1">
             <tr>
-                <th>movieID</th>
-                <th>title</th>
-                <th>poster</th>
+                <th>Name</th>
+                <th>Audience</th>
+                <th>Juges</th>
             </tr>
         </table>
         <script>
@@ -17,12 +17,12 @@
                 .then(response => response.json())
                 .then(data => {
                     for (var i = 0; i<data.items.length; i++){
-                        let vmovieID = data.items[i].movieID;
-                        let vtitle = data.items[i].title;
-                        let vposter = data.items[i].poster;
+                        let vname = data.items[i].name;
+                        let vtitle = data.items[i].audience * 0.6;
+                        let vposter = data.items[i].juges;
                             document.querySelector("#tb1").innerHTML += `
                                 <tr>
-                                    <td>${vmovieID}</td>
+                                    <td>${vname}</td>
                                     <td>${vtitle}</td>
                                     <td>${vposter}</td>
                                 </tr>`;

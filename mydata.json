@@ -1,14 +1,14 @@
 {
   "items": [
       {
-          "movieID": "65086",
-          "title": "80",
-          "poster": "40"
+          "name": "Tim ",
+          "audience": "80",
+          "juges": "90"
       },
       {
-          "movieID": "76726",
-          "title": "90",
-          "poster": "90"
+          "name": "Mario",
+          "audience": "90",
+          "juges": "90"
       }
   ]
 }
