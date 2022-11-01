@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="display_data()">
+        <div class="container text-center score">
+            <h2>选手分数</h2>
+            <table id = "tb1" class = "table">
+                <tr>
+                    <th>Name</th>
+                    <th>Juges</th>
+                    <th>Musicians</th>
+                    <th>Audience</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <label for="number">评委 1</label>
+                        <input type="number" id="juges" class = "juges_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">评委 2</label>
+                        <input type="number" id="juges" class = "juges_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">评委 3</label>
+                        <input type="number" id="number" class = "juges_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">评委 4</label>
+                        <input type="number" id="number" class = "juges_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">评委 5</label>
+                        <input type="number" id="number" class = "juges_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">评委总分</label>
+                        <label id="juges_score_label">0</label>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <label for="number">原创音乐人 1</label>
+                        <input type="number" id="number" class = "musicians_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">原创音乐人 2</label>
+                        <input type="number" id="number" class = "musicians_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">原创音乐人 3</label>
+                        <input type="number" id="number" class = "musicians_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">原创音乐人 4</label>
+                        <input type="number" id="number" class = "musicians_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">原创音乐人 5</label>
+                        <input type="number" id="number" class = "musicians_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">原创音乐人总分</label>
+                        <label id="musicians_score_label">0</label>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>
+                        <label for="number">观众</label>
+                        <input type="number" id="number" class="audience_score" value = 0>
+                    </p>
+                    <p>
+                        <label for="number">观众总分</label>
+                        <label id="audience_score_label">0</label>
+                    </p>
+                </div>
+                <p id="final_score">0</p>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="calculate()">计算</button>
+            <button type="button" class="btn btn-primary" onclick="send_to_json()">输入</button>
+            <button type="button" class="btn btn-primary" onclick="display_data()">计算</button>
+        </div>
+        <script src="backend.js"></script>
+        <script>
+            // function get_data(){
+            // fetch("mydata.json")
+            // .then(response => response.json())
+            // .then(data => {
+            //     for (var i = 0; i<data.items.length; i++){
+            //         let vname = data.items[i].name;
+            //         let vaudience = data.items[i].audience;
+            //         let vjuges = data.items[i].juges;
+            //         let vmusicians = data.items[i].musicians;
+            //             document.querySelector("#tb1").innerHTML += `
+            //                 <tr>
+            //                     <td>${vname}</td>
+            //                     <td>${vjuges}</td>
+            //                     <td>${vmusicians}</td>
+            //                     <td>${vaudience}</td>
+            //                 </tr>`;
+            //         }
+            //     })
+            // }
+        </script>
+        
+    </body>
+</html>
