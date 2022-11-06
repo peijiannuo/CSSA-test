@@ -13,6 +13,7 @@
             <h2>选手分数</h2>
             <table id = "tb1" class = "table">
                 <tr>
+                    <th>Id</th>
                     <th>Name</th>
                     <th>Juges</th>
                     <th>Musicians</th>
@@ -86,34 +87,15 @@
                         <label id="audience_score_label">0</label>
                     </p>
                 </div>
-                <p id="final_score">0</p>
+                <p>
+                    <label for="number">总分</label>
+                    <label id="final_score">0</label>
+                </p>
             </div>
             <button type="button" class="btn btn-primary" onclick="calculate()">计算</button>
             <button type="button" class="btn btn-primary" onclick="send_to_json()">输入</button>
-            <button type="button" class="btn btn-primary" onclick="display_data()">计算</button>
+            <button type="button" class="btn btn-primary" onclick="display_data()">显示</button>
         </div>
         <script src="backend.js"></script>
-        <script>
-            // function get_data(){
-            // fetch("mydata.json")
-            // .then(response => response.json())
-            // .then(data => {
-            //     for (var i = 0; i<data.items.length; i++){
-            //         let vname = data.items[i].name;
-            //         let vaudience = data.items[i].audience;
-            //         let vjuges = data.items[i].juges;
-            //         let vmusicians = data.items[i].musicians;
-            //             document.querySelector("#tb1").innerHTML += `
-            //                 <tr>
-            //                     <td>${vname}</td>
-            //                     <td>${vjuges}</td>
-            //                     <td>${vmusicians}</td>
-            //                     <td>${vaudience}</td>
-            //                 </tr>`;
-            //         }
-            //     })
-            // }
-        </script>
-        
     </body>
 </html>

@@ -1,27 +1,9 @@
 // Create an object
-const playerData = [
-    {
-        "id": 0,
-        "name": "Tim ",
-        "juges": "91",
-        "musicians": "92",
-        "audience": "93",
-        "total": "93"
-    },
-    {
-        "id": 1,
-        "name": "Mario",
-        "juges": "94",
-        "musicians": "95",
-        "audience": "96",
-        "total": "93"
-    }
-
-]
-  // Store the object into storage
-localStorage.setItem("playerData", JSON.stringify(playerData));
-// const data = localStorage.getItem("playerData");
-// console.log("data: ", JSON.parse(data));
+var json = '';
+//   // Store the object into storage
+// localStorage.setItem("playerData", JSON.stringify(playerData));
+// // const data = localStorage.getItem("playerData");
+// // console.log("data: ", JSON.parse(data));
 
 
 function calculate() {
@@ -52,21 +34,103 @@ function calculate() {
 }
 
 function send_to_json() {
-    const data = window.localStorage.getItem("playerData");
-    var js_data = JSON.parse(data);
-    for (var i = 0; i < js_data.length; i++) {
-        if (js_data[i].id === 1) {
-            js_data[i].total = "90";
+    student = ''
+    id_selected = 1
+    console.log(json.length)
+    for (var i = 0; i < json.length; i++) {
+        if (json[i].id === id_selected) {
+            json[i].total = $("#final_score").text();
             break;
         }
-      }
-    localStorage.clear()
-    localStorage.setItem("playerData", JSON.stringify(js_data));
+    }
+    console.log(json)
+    for (var i = 0; i < json.length; i++) {
+        // DATA FROM JSON OBJECT
+        student += '<tr>';
+        student += '<td>' + 
+            json[i].id + '</td>'; 
+            
+        student += '<td>' + 
+            json[i].name + '</td>';
+
+        student += '<td>' + 
+            json[i].juges + '</td>';
+
+        student += '<td>' + 
+            json[i].musicians + '</td>';
+
+        student += '<td>' + 
+            json[i].audience + '</td>';
+
+        student += '<td>' + 
+            json[i].total + '</td>';
+
+        student += '</tr>';
+        
+    }
+    $("#tb1 td").remove(); 
+    $('#tb1').append(student);
+    // const data = window.localStorage.getItem("playerData");
+    // var js_data = JSON.parse(data);
+    // for (var i = 0; i < js_data.length; i++) {
+    //     if (js_data[i].id === 1) {
+    //         js_data[i].total = "90";
+    //         break;
+    //     }
+    // }
+    // json = JSON.parse(data)
+    // console.log(json)
+    // json[0].name = "caro"
+    // console.log(json[0].name)
+    // console.log(json)
+    // // localStorage.setItem("data", JSON.stringify(data));
+    // // console.log("data: ", JSON.parse(data))
 }
 
 function display_data(){
-    $("#tb1 td").remove();
-    const data = window.localStorage.getItem("playerData");
-    var js_data = JSON.parse(data);
-    console.log(js_data);
+    $("#tb1 td").remove(); 
+    fetch('mydata.json')
+    .then(res => res.json()) // the .json() method parses the JSON response into a JS object literal
+    .then(data => {
+        console.log(data)
+        // window.localStorage.setItem("json", JSON.stringify(data));
+        json = JSON.stringify(data)
+        json = JSON.parse(json)
+        window.localStorage.setItem("json", json);
+    });
+    
+    // FETCHING DATA FROM JSON FILE
+    $.getJSON("mydata.json", 
+            function (data) {
+        var student = '';
+
+        // ITERATING THROUGH OBJECTS
+        $.each(data, function (key, value) {
+
+            // DATA FROM JSON OBJECT
+            student += '<tr>';
+            student += '<td>' + 
+                value.id + '</td>';
+                
+            student += '<td>' + 
+                value.name + '</td>';
+
+            student += '<td>' + 
+                value.juges + '</td>';
+
+            student += '<td>' + 
+                value.musicians + '</td>';
+
+            student += '<td>' + 
+                value.audience + '</td>';
+
+            student += '<td>' + 
+                value.total + '</td>';
+
+            student += '</tr>';
+        });
+            
+        //INSERTING ROWS INTO TABLE 
+        $('#tb1').append(student);
+    });
 }
