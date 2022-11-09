@@ -1,3 +1,17 @@
 .container{
     padding: 30px;
 }
+
+.background-color{
+    /* background-color: #57068c; */
+}
+.card {
+    flex-direction: row;
+  }
+  .card img {
+    width: 30%;
+  }
+
+.x-font{
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+}
