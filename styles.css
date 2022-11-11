@@ -15,3 +15,7 @@
 .x-font{
     font-family: 'ZCOOL KuaiLe', sans-serif;
 }
+
+.score-card{
+  display: inline-flex;
+}

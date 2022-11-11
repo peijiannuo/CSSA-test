@@ -94,9 +94,10 @@ function display_data(){
     .then(data => {
         console.log(data)
         // window.localStorage.setItem("json", JSON.stringify(data));
-        json = JSON.stringify(data)
-        json = JSON.parse(json)
-        window.localStorage.setItem("json", json);
+        json1 = JSON.stringify(data)
+        json = JSON.parse(json1)
+        localStorage.setItem("data", json1);
+        window.location.herf = "index.html"
     });
     
     // FETCHING DATA FROM JSON FILE
