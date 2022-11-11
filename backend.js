@@ -30,7 +30,7 @@ function calculate() {
     document.getElementById("juges_score_label").innerHTML = juges_final_score;
     document.getElementById("musicians_score_label").innerHTML = musicians_final_score;
     document.getElementById("audience_score_label").innerHTML = audience_final_score;
-    document.getElementById("final_score").innerHTML = audience_final_score/2 + musicians_final_score/4 + juges_final_score/4;  
+    document.getElementById("final_score").innerHTML = audience_final_score/2 + musicians_final_score/2 + juges_final_score/6;  
 }
 
 function send_to_json() {
