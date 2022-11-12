@@ -1,10 +1,17 @@
-// Create an object
 var json = '';
-//   // Store the object into storage
-// localStorage.setItem("playerData", JSON.stringify(playerData));
-// // const data = localStorage.getItem("playerData");
-// // console.log("data: ", JSON.parse(data));
 
+function select_name(name){
+    localData = localStorage.getItem('data')
+    localData = JSON.parse(localData)
+    selectedid = 0
+    for (var i = 0; i < localData.length; i++) {
+        if (name == localData[i].name){
+            console.log(localData[i].id)
+            selectedId = localData[i].id
+        }    
+    }
+    document.getElementById("selected-name").innerHTML = selectedId;
+}
 
 function calculate() {
     var juges_final_score = 0
@@ -35,16 +42,21 @@ function calculate() {
 
 function send_to_json() {
     student = ''
-    id_selected = 1
-    console.log(json.length)
+    id_selected = parseInt($('#selected-name').text())
+    console.log( id_selected)
     for (var i = 0; i < json.length; i++) {
         if (json[i].id === id_selected) {
             json[i].total = $("#final_score").text();
             break;
         }
     }
-    console.log(json)
-    for (var i = 0; i < json.length; i++) {
+}
+
+function load_local (){
+    localData = localStorage.getItem('data')
+    localData = JSON.parse(localData)
+    var student = ''
+    for (var i = 0; i < localData.length; i++) {
         // DATA FROM JSON OBJECT
         student += '<tr>';
         student += '<td>' + 
@@ -70,22 +82,8 @@ function send_to_json() {
     }
     $("#tb1 td").remove(); 
     $('#tb1').append(student);
-    // const data = window.localStorage.getItem("playerData");
-    // var js_data = JSON.parse(data);
-    // for (var i = 0; i < js_data.length; i++) {
-    //     if (js_data[i].id === 1) {
-    //         js_data[i].total = "90";
-    //         break;
-    //     }
-    // }
-    // json = JSON.parse(data)
-    // console.log(json)
-    // json[0].name = "caro"
-    // console.log(json[0].name)
-    // console.log(json)
-    // // localStorage.setItem("data", JSON.stringify(data));
-    // // console.log("data: ", JSON.parse(data))
 }
+
 
 function display_data(){
     $("#tb1 td").remove(); 
@@ -96,6 +94,7 @@ function display_data(){
         // window.localStorage.setItem("json", JSON.stringify(data));
         json1 = JSON.stringify(data)
         json = JSON.parse(json1)
+        console.log(typeof json)
         localStorage.setItem("data", json1);
         window.location.herf = "index.html"
     });
