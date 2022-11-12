@@ -4,6 +4,7 @@
 
 .background-color{
     /* background-color: #57068c; */
+    background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
 }
 .card {
     flex-direction: row;
@@ -18,4 +19,7 @@
 
 .score-card{
   display: inline-flex;
+}
+.row{
+  margin: 30px;
 }
