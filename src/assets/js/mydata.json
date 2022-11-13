@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "Tim",
+    "juges": "91",
+    "musicians": "92",
+    "audience": "93",
+    "total": "93"
+  },
+  {
+    "id": 1,
+    "name": "Mario",
+    "juges": "94",
+    "musicians": "95",
+    "audience": "96",
+    "total": "93"
+  }
+]
