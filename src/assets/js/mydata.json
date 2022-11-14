@@ -2,17 +2,91 @@
   {
     "id": 0,
     "name": "Tim",
-    "juges": "91",
-    "musicians": "92",
-    "audience": "93",
-    "total": "93"
+    "song": "",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
   },
+
   {
     "id": 1,
     "name": "Mario",
-    "juges": "94",
-    "musicians": "95",
-    "audience": "96",
-    "total": "93"
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 2,
+    "name": "Jason",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 3,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 4,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 5,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 6,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 7,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 8,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
+  },
+
+  {
+    "id": 9,
+    "name": "Mario",
+    "juges": "0",
+    "musicians": "0",
+    "audience": "0",
+    "total": "0"
   }
 ]

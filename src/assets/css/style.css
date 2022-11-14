@@ -9,7 +9,7 @@
 
 /* title */
 .x-font {
-  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-family: 'ZCOOL XiaoWei', sans-serif;
   font-size: 4rem;
 }
 
@@ -17,9 +17,9 @@
   font-size: 80px;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -43,10 +43,13 @@
 
 .card {
   flex-direction: row;
-  padding: 20px;
-  font-family: "ZCOOL KuaiLe", sans-serif;
+  padding: 10px;
+  font-family: 'ZCOOL XiaoWei', sans-serif;
   font-size: 1rem;
   border-radius: 2rem;
+  width: 75rem;
+  height: 5rem;
+  margin: auto;
 }
 
 .profile-img {
@@ -54,7 +57,17 @@
 }
 
 .card img {
-  width: 30%;
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+}
+
+.col-12{
+  margin-bottom: 5px;
+}
+
+.card-body{
+  margin: auto;
 }
 
 .score-card {
@@ -63,7 +76,7 @@
 
 /* first place card */
 .frist-card {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* second place card */

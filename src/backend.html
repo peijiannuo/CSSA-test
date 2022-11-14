@@ -14,7 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body onload="display_data()">
+  <body>
     <div class="container text-center score">
       <h2>选手分数</h2>
       <table id="tb1" class="table">
@@ -154,20 +154,21 @@
           </li>
         </ul>
         <label for="text">选手：</label>
-        <p id="selected-name">0</p>
+        <p id="selected-name"></p>
+        <p>-</p>
+        <p id="selected-name-id"></p>
+
       </div>
       <button type="button" class="btn btn-primary" onclick="calculate()">
         计算
       </button>
-      <button type="button" class="btn btn-primary" onclick="send_to_json()">
-        输入
-      </button>
+      <button type="button" class="btn btn-primary" onclick="load_local()">
+        刷新
+      </button>      
       <button type="button" class="btn btn-primary" onclick="display_data()">
         Load json file
       </button>
-      <button type="button" class="btn btn-primary" onclick="load_local()">
-        Load local data
-      </button>
+
     </div>
     <script src="/src/assets/js/backend.js"></script>
     <script

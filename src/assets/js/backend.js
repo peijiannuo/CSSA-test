@@ -1,5 +1,3 @@
-var json = "";
-
 function select_name(name) {
   localData = localStorage.getItem("data");
   localData = JSON.parse(localData);
@@ -10,7 +8,8 @@ function select_name(name) {
       selectedId = localData[i].id;
     }
   }
-  document.getElementById("selected-name").innerHTML = selectedId;
+  document.getElementById("selected-name-id").innerHTML = selectedId;
+  document.getElementById("selected-name").innerHTML = name;
 }
 
 function calculate() {
@@ -40,87 +39,86 @@ function calculate() {
     musicians_final_score;
   document.getElementById("audience_score_label").innerHTML =
     audience_final_score;
-  document.getElementById("final_score").innerHTML =
+  document.getElementById("final_score").innerHTML = parseFloat(
     audience_final_score / 2 +
     musicians_final_score / 2 +
-    juges_final_score / 6;
-}
-
-function send_to_json() {
-  student = "";
-  id_selected = parseInt($("#selected-name").text());
-  console.log(id_selected);
-  for (var i = 0; i < json.length; i++) {
-    if (json[i].id === id_selected) {
-      json[i].total = $("#final_score").text();
-      break;
-    }
-  }
+    juges_final_score / 6    
+  ).toFixed(2);
 }
 
 function load_local() {
-  localData = localStorage.getItem("data");
-  localData = JSON.parse(localData);
+  id_selected = parseInt($("#selected-name-id").text());
+  var student_data = localStorage.getItem("data")
+  student_data = JSON.parse(json1)
+  for (var i = 0; i < student_data.length; i++) {
+    if (student_data[i].id === id_selected) {
+      student_data[i].juges = $("#juges_score_label").text();
+      student_data[i].musicians = $("#musicians_score_label").text();
+      student_data[i].audience = $("#audience_score_label").text();
+      student_data[i].total = $("#final_score").text();
+      break;
+    }
+  }
+
   var student = "";
-  for (var i = 0; i < localData.length; i++) {
+  for (var i = 0; i < student_data.length; i++) {
     // DATA FROM JSON OBJECT
     student += "<tr>";
-    student += "<td>" + json[i].id + "</td>";
+    student += "<td>" + student_data[i].id + "</td>";
 
-    student += "<td>" + json[i].name + "</td>";
+    student += "<td>" + student_data[i].name + "</td>";
 
-    student += "<td>" + json[i].juges + "</td>";
+    student += "<td>" + student_data[i].juges + "</td>";
 
-    student += "<td>" + json[i].musicians + "</td>";
+    student += "<td>" + student_data[i].musicians + "</td>";
 
-    student += "<td>" + json[i].audience + "</td>";
+    student += "<td>" + student_data[i].audience + "</td>";
 
-    student += "<td>" + json[i].total + "</td>";
+    student += "<td>" + student_data[i].total + "</td>";
 
     student += "</tr>";
   }
   $("#tb1 td").remove();
   $("#tb1").append(student);
+
+  student_data = JSON.stringify(student_data)
+  localStorage.setItem("data", student_data);
+
 }
 
 function display_data() {
   $("#tb1 td").remove();
-  fetch("mydata.json")
+  fetch("./assets/js/mydata.json")
     .then((res) => res.json()) // the .json() method parses the JSON response into a JS object literal
     .then((data) => {
-      console.log(data);
-      // window.localStorage.setItem("json", JSON.stringify(data));
+      // conevert to string
       json1 = JSON.stringify(data);
-      json = JSON.parse(json1);
-      console.log(typeof json);
+      // conevert to object
+      // json_student = JSON.parse(json1);
       localStorage.setItem("data", json1);
-      window.location.herf = "index.html";
+      window.location.herf = "./src/index.html";
+
+      var student = "";
+      for (var i = 0; i < data.length; i++) {
+        // DATA FROM JSON OBJECT
+        student += "<tr>";
+        student += "<td>" + data[i].id + "</td>";
+    
+        student += "<td>" + data[i].name + "</td>";
+    
+        student += "<td>" + data[i].juges + "</td>";
+    
+        student += "<td>" + data[i].musicians + "</td>";
+    
+        student += "<td>" + data[i].audience + "</td>";
+    
+        student += "<td>" + data[i].total + "</td>";
+    
+        student += "</tr>";
+      }
+      $("#tb1 td").remove();
+      $("#tb1").append(student);
+
     });
 
-  // FETCHING DATA FROM JSON FILE
-  $.getJSON("mydata.json", function (data) {
-    var student = "";
-
-    // ITERATING THROUGH OBJECTS
-    $.each(data, function (key, value) {
-      // DATA FROM JSON OBJECT
-      student += "<tr>";
-      student += "<td>" + value.id + "</td>";
-
-      student += "<td>" + value.name + "</td>";
-
-      student += "<td>" + value.juges + "</td>";
-
-      student += "<td>" + value.musicians + "</td>";
-
-      student += "<td>" + value.audience + "</td>";
-
-      student += "<td>" + value.total + "</td>";
-
-      student += "</tr>";
-    });
-
-    //INSERTING ROWS INTO TABLE
-    $("#tb1").append(student);
-  });
 }
