@@ -6,87 +6,106 @@
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":0
   },
 
   {
     "id": 1,
     "name": "Mario",
+    "song": "2",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":1
   },
 
   {
     "id": 2,
     "name": "Jason",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":2
   },
 
   {
     "id": 3,
-    "name": "Mario",
+    "name": "Mario1",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":3
   },
 
   {
     "id": 4,
-    "name": "Mario",
+    "name": "Mario2",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":4
   },
 
   {
     "id": 5,
-    "name": "Mario",
+    "name": "Mario3",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":5
   },
 
   {
     "id": 6,
-    "name": "Mario",
+    "name": "Mario4",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":6
   },
 
   {
     "id": 7,
-    "name": "Mario",
+    "name": "Mario5",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":7
   },
 
   {
     "id": 8,
-    "name": "Mario",
+    "name": "Mario6",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":8
   },
 
   {
     "id": 9,
-    "name": "Mario",
+    "name": "Mario7",
+    "song": "",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
-    "total": "0"
+    "total": "0",
+    "ranking":9
   }
 ]

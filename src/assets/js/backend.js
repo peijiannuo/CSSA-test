@@ -1,15 +1,15 @@
-function select_name(name) {
+function select_name(id) {
   localData = localStorage.getItem("data");
   localData = JSON.parse(localData);
-  selectedid = 0;
+  selected_name = ''
   for (var i = 0; i < localData.length; i++) {
-    if (name == localData[i].name) {
-      console.log(localData[i].id);
+    if (id == localData[i].id) {
       selectedId = localData[i].id;
+      selected_name = localData[i].name;
     }
   }
   document.getElementById("selected-name-id").innerHTML = selectedId;
-  document.getElementById("selected-name").innerHTML = name;
+  document.getElementById("selected-name").innerHTML = selected_name;
 }
 
 function calculate() {
@@ -44,12 +44,24 @@ function calculate() {
     musicians_final_score / 2 +
     juges_final_score / 6    
   ).toFixed(2);
+
+
+  selected_name = $("#selected-name").text()
+  selected_id = $("#selected-name-id").text()
+  if (confirm("确定要更改 " + selected_id + " 号选手： " + selected_name + "的分数？")){
+    update_data()
+    console.log('Saved to the database.');
+  }else{
+    console.log('Thing was not saved to the database.');
+  }
+
+  load_local()
 }
 
-function load_local() {
+function update_data(){
   id_selected = parseInt($("#selected-name-id").text());
   var student_data = localStorage.getItem("data")
-  student_data = JSON.parse(json1)
+  student_data = JSON.parse(student_data)
   for (var i = 0; i < student_data.length; i++) {
     if (student_data[i].id === id_selected) {
       student_data[i].juges = $("#juges_score_label").text();
@@ -59,6 +71,14 @@ function load_local() {
       break;
     }
   }
+  student_data = JSON.stringify(student_data)
+  localStorage.setItem("data", student_data);
+}
+
+function load_local() {
+  console.log('Refreshed');
+  var student_data = localStorage.getItem("data")
+  student_data = JSON.parse(student_data)
 
   var student = "";
   for (var i = 0; i < student_data.length; i++) {
@@ -81,8 +101,7 @@ function load_local() {
   $("#tb1 td").remove();
   $("#tb1").append(student);
 
-  student_data = JSON.stringify(student_data)
-  localStorage.setItem("data", student_data);
+  Ranking()
 
 }
 
@@ -121,4 +140,18 @@ function display_data() {
 
     });
 
+}
+
+function Ranking(){
+  var student_data = localStorage.getItem("data")
+  student_data = JSON.parse(student_data)
+  student_data.sort((a, b) => b.total - a.total);
+  newRanking = 0
+  for (var i = 0; i < student_data.length; i++){
+    student_data[i].ranking = newRanking
+    newRanking += 1
+  }
+  console.log(student_data)
+  student_data = JSON.stringify(student_data)
+  localStorage.setItem("newRanking", student_data);
 }

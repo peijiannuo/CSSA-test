@@ -63,7 +63,16 @@
 }
 
 .col-12{
-  margin-bottom: 5px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.student0{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.student1{
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .card-body{
@@ -83,3 +92,6 @@
 .second-card {
   font-size: 1.5rem;
 }
+
+
+
