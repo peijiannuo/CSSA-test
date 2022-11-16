@@ -1,7 +1,9 @@
 var student_data = ''
 
 function get_data() {
-  student_data = localStorage.getItem("data");
+
+
+  student_data = localStorage.getItem("newRanking");
   student_data = JSON.parse(student_data);
   console.log(student_data);
 
@@ -18,8 +20,7 @@ function get_data() {
   });
 
   $('.col-12').each(function(i, obj) {
-    className = 'student'+i
-    $( this ).addClass(className);
+    $( this ).attr('id',i);
   });
   
   student_data = JSON.stringify(student_data)
@@ -30,23 +31,29 @@ function get_data() {
 
 
 function swap(){
-  var moveUpCard = "student2"
+  var moveUpCard = 2
   var list = [0,1]
-
-  $('.'+moveUpCard).animate({
+  var newMoveUpId = 0
+  $('#'+moveUpCard).animate({
     bottom: "+=176",
     // height: "toggle"
   }, 1000, function() {
     // Animation complete.
   });
+  $('#'+moveUpCard).attr('id',newMoveUpId)
 
   for (var i = 0; i < list.length; i++) {
-    var moveDownCard = "student"+i
-    $('.'+moveDownCard).animate({
+    var moveDownCard = i
+    $('#'+moveDownCard).animate({
       top: "+=88",
       // height: "toggle"
     }, 1000, function() {
       // Animation complete.
     });
   }
+  for (var i = 0; i < list.length; i++) {
+    var moveDownCard = i
+    $('#'+moveDownCard).attr('id',(i+1));
+  }
+
 }
