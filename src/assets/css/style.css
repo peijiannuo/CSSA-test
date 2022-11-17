@@ -85,9 +85,10 @@ ul{
 }
 
 /* first place card */
-.frist-card {
-  font-size: 1.5rem;
+[id="0"] .card {
+  background-color: #6d8bed;
 }
+
 
 /* second place card */
 .second-card {

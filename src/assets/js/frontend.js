@@ -28,32 +28,74 @@ function get_data() {
 
 }
 
+function position(){
+  var updated_id = localStorage.getItem("updated_id")
+  var display_data = JSON.parse(localStorage.getItem("displayData"))
+  var newRanking = JSON.parse(localStorage.getItem("newRanking"))
+  for (var i = 0; i < display_data.length; i++){
+    if (display_data[i].id == updated_id){
+      ranking = display_data[i].ranking
+    }
+    if (newRanking[i].id == updated_id){
+      curRanking = newRanking[i].ranking
+    }
+  }
+  listsize = ranking - curRanking
+  let moveDownList = [];
+
+  for (i=0;i<listsize;i++){
+    moveDownList.push(i+curRanking)
+  }
+
+  console.log(updated_id,moveDownList,curRanking)
+  swap(updated_id,moveDownList,curRanking)
+
+}
 
 
-function swap(){
-  var moveUpCard = 2
-  var list = [0,1]
-  var newMoveUpId = 0
-  $('#'+moveUpCard).animate({
-    bottom: "+=176",
-    // height: "toggle"
-  }, 1000, function() {
-    // Animation complete.
-  });
-  $('#'+moveUpCard).attr('id',newMoveUpId)
 
-  for (var i = 0; i < list.length; i++) {
-    var moveDownCard = i
-    $('#'+moveDownCard).animate({
-      top: "+=88",
+function swap(moveUpCard,list,newMoveUpId){
+  var n = list.length
+  if (n==0){
+    console.log("x")
+  }else{
+    var moveUpPx = "-="+n*88
+    var moveDownPx = "-="+88
+    $('#'+moveUpCard).animate({
+      top: moveUpPx,
       // height: "toggle"
     }, 1000, function() {
       // Animation complete.
     });
-  }
-  for (var i = 0; i < list.length; i++) {
-    var moveDownCard = i
-    $('#'+moveDownCard).attr('id',(i+1));
+    $('#'+moveUpCard).attr('id',-1)
+
+    for (var i = 0; i < list.length; i++) {
+      var moveDownCard = list[i]
+      $('#'+moveDownCard).animate({
+        top: moveDownPx,
+        // height: "toggle"
+      }, 1000, function() {
+        // Animation complete.
+      });
+    }
+
+    for(var i = list.length - 1; i >= 0; i--){
+      var moveDownCard1 = list[i]
+      var newMoveDownID = list[i]+1
+      $('#'+moveDownCard1).attr('id',newMoveDownID);
+    }
+
+    $('#'+-1).attr('id',newMoveUpId)    
   }
 
+
+}
+
+
+function movetest(){
+  var moveDownList = [2,3]
+  var updated_id = 4
+  var curRanking = 2
+  console.log("done")
+  swap(updated_id,moveDownList,curRanking)
 }

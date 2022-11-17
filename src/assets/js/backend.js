@@ -73,6 +73,7 @@ function update_data(){
   }
   student_data = JSON.stringify(student_data)
   localStorage.setItem("data", student_data);
+  localStorage.setItem("updated_id", id_selected);
 }
 
 function load_local() {
