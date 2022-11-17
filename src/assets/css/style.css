@@ -1,6 +1,6 @@
 /* Whole page */
 .container {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .background-color {
@@ -54,7 +54,6 @@ ul{
   font-family: 'ZCOOL XiaoWei', sans-serif;
   font-size: 1rem;
   border-radius: 2rem;
-  width: 75rem;
   height: 5rem;
   margin: auto;
 }
@@ -85,8 +84,11 @@ ul{
 }
 
 /* first place card */
-[id="0"] .card {
-  background-color: #6d8bed;
+.first-card{
+  background-color: white;
+}
+.first-card{
+  background-color: yellow;
 }
 
 

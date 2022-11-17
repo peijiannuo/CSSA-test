@@ -123,7 +123,7 @@
           <label id="final_score">0</label>
         </p>
       </div>
-      <div class="dropdown d-flex">
+      <div class="dropdown d-inline-flex">
         <button
           class="btn btn-secondary dropdown-toggle"
           type="button"
@@ -226,19 +226,27 @@
           </li>
 
         </ul>
-        <label for="text">选手：</label>
+      </div>   
+      <div>
+        <label for="text" style="d-inline-flex">选手：</label>
         <p id="selected-name"></p>
         <p>-</p>
         <p id="selected-name-id"></p>
+        <button type="button" class="btn btn-info">
+          晋级
+        </button>
+        <button type="button" class="btn btn-danger">
+          淘汰
+        </button>        
+      </div>     
 
-      </div>
       <button type="button" class="btn btn-primary" onclick="calculate()">
         计算
       </button>
       <button type="button" class="btn btn-primary" onclick="load_local()">
         刷新
       </button>      
-      <button type="button" class="btn btn-primary" onclick="display_data()">
+      <button type="button" class="btn btn-primary" onclick="reset_data()">
         重置
       </button>
 

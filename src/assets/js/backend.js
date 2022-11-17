@@ -106,7 +106,7 @@ function load_local() {
 
 }
 
-function display_data() {
+function reset_data() {
   $("#tb1 td").remove();
   fetch("./assets/js/mydata.json")
     .then((res) => res.json()) // the .json() method parses the JSON response into a JS object literal

@@ -97,9 +97,8 @@ function swap(moveUpCard,list,newMoveUpId){
 
 
 function movetest(){
-  var moveDownList = [2,3]
-  var updated_id = 4
-  var curRanking = 2
-  console.log("done")
-  swap(updated_id,moveDownList,curRanking)
+
+  $(".first-card").addClass("win")
+
 }
+
