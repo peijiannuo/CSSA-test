@@ -28,6 +28,10 @@ function get_data() {
 
 }
 
+function refresh_data(){
+// 对应排名填入对应的数据
+}
+
 function position(){
   var updated_id = localStorage.getItem("updated_id")
   var display_data = JSON.parse(localStorage.getItem("displayData"))
@@ -60,7 +64,7 @@ function swap(moveUpCard,list,newMoveUpId){
     console.log("x")
   }else{
     var moveUpPx = "-="+n*88
-    var moveDownPx = "-="+88
+    var moveDownPx = "+="+88
     $('#'+moveUpCard).animate({
       top: moveUpPx,
       // height: "toggle"
