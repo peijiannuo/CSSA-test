@@ -1,5 +1,15 @@
-function win(){
-    console.log("xxx")
+function win(card){
+  $("."+card).animate({
+    // opacity: 0.5,
+    backgroundColor: "rgb( 50, 100, 20 )",
+    width: "+=50",
+    height: "+=20"
+  }, 1000, function() {
+    // Animation complete.
+  });
+}
+function lost(card){
+  $("."+card).addClass("lost")
 }
 
 function load_data(){
