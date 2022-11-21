@@ -33,6 +33,7 @@
   border-radius: 40px;
   height: 80px;
   margin: auto;
+  font-size: 25px;
 }
 
 .card img {
@@ -45,5 +46,10 @@
 }
 
 .card-body {
+  margin: auto;
+  padding: 20px;
+}
+
+.vs-box{
   margin: auto;
 }
