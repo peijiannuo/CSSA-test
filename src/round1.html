@@ -53,21 +53,69 @@
             <div class="card-body d-inline-flex justify-content-between">
               <div class="text-center d-inline-flex">
                 <p class="d-inline-flex">《</p>
-                <button class="btn">
-                  <p class="d-inline-flex songName">Song</p>   
+                <button class="btn d-inline-flex" type="button" onclick="lost('player-2')">
+                  <p class="songName">Song</p>   
                 </button>
                 <p class="d-inline-flex">》</p>
               </div>   
-              <div class="text-center d-inline-flex">
+              <div class="text-center d-inline-flex" type="button" onclick="win('player-2')">
                 <button class="btn">
                   <p class="studentName">Name</p>  
                 </button>
               </div>           
             </div>
-            <img src="./assets/img/image1.jpg" class="card-img-top" alt="..." onclick="win()"/>
-            <!-- <input type="image" src="./assets/img/image1.jpg" name="saveForm" class="btTxt submit" id="saveForm" /> -->
+            <img src="./assets/img/image1.jpg" class="card-img-top d-inline-flex" alt="..." />
           </div>
         </div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-5">
+          <div class="card player-3">
+            <img src="./assets/img/image1.jpg" class="card-img-top d-inline-flex" alt="..." />
+            <div class="card-body d-inline-flex justify-content-between">
+              <div class="text-center d-inline-flex">
+                <button class="btn d-inline-flex" type="button" onclick="win('player-3')">
+                  <p class="studentName">Name</p>  
+                </button>
+              </div>
+              <div class="text-center d-inline-flex">
+                <p class="d-inline-flex">《</p>
+                <button class="btn d-inline-flex">
+                  <p class="d-inline-flex songName" type="button" onclick="lost('player-3')">Song</p>   
+                </button>
+                <p class="d-inline-flex">》</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 text-center vs-box">
+          <h1 class="vs">VS</h1>
+        </div>
+
+        <div class="col-5">
+          <div class="card player-4">
+            <div class="card-body d-inline-flex justify-content-between">
+              <div class="text-center d-inline-flex">
+                <p class="d-inline-flex">《</p>
+                <button class="btn d-inline-flex" type="button" onclick="lost('player-4')">
+                  <p class="songName">Song</p>   
+                </button>
+                <p class="d-inline-flex">》</p>
+              </div>   
+              <div class="text-center d-inline-flex" type="button" onclick="win('player-4')">
+                <button class="btn">
+                  <p class="studentName">Name</p>  
+                </button>
+              </div>           
+            </div>
+            <img src="./assets/img/image1.jpg" class="card-img-top d-inline-flex" alt="..." />
+          </div>
+        </div>
+      </div>
+
+
       <button type="button" class="btn btn-primary" onclick="load_data()">
         计算
       </button>

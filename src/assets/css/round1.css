@@ -2,6 +2,10 @@
   background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
 }
 
+.container{
+  width: 100%;
+}
+
 .glow {
   font-size: 80px;
   color: #fff;
@@ -32,10 +36,12 @@
   flex-direction: row;
   border-radius: 40px;
   height: 80px;
+  width: 80%;
   margin: auto;
   font-size: 25px;
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .btn{
@@ -66,13 +72,15 @@
 }
 
 .win{
-  background-color: black;
+  width: auto;
+  height: 100px;
+  width: 100%;
+  font-size: 35px;
+  transition:1s;
 }
 
 .lost{
-  width: auto;
-  height: 100px;
-  font-size: 35px;
-  background-color: #9f9fb3;
-  transition:1s
+  background-color: #808080;
+  opacity: 0.5;
+  transition:1s;
 }
