@@ -25,6 +25,10 @@ function load_data(){
     $('.col-12').each(function(i, obj) {
       $( this ).attr('id',i);
     });
+
+    $('.card-img-top').each(function(i, obj) {
+      $( this ).attr('src',student_data[i].img);
+    });
     
     student_data = JSON.stringify(student_data)
     localStorage.setItem("displayData", student_data);

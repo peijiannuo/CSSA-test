@@ -2,6 +2,7 @@
   {
     "id": 0,
     "name": "Tim",
+    "img":"./assets/img/image0.jpg",
     "song": "李白",
     "juges": "0",
     "musicians": "0",
@@ -13,7 +14,7 @@
   {
     "id": 1,
     "name": "Mario",
-    "img":"",
+    "img":"./assets/img/image1.jpg",
     "song": "告白气球",
     "juges": "0",
     "musicians": "0",
@@ -25,6 +26,7 @@
   {
     "id": 2,
     "name": "Jason",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -36,6 +38,7 @@
   {
     "id": 3,
     "name": "Mario1",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -47,6 +50,7 @@
   {
     "id": 4,
     "name": "Mario2",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -58,6 +62,7 @@
   {
     "id": 5,
     "name": "Mario3",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -69,6 +74,7 @@
   {
     "id": 6,
     "name": "Mario4",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -80,6 +86,7 @@
   {
     "id": 7,
     "name": "Mario5",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -91,6 +98,7 @@
   {
     "id": 8,
     "name": "Mario6",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
@@ -102,6 +110,7 @@
   {
     "id": 9,
     "name": "Mario7",
+    "img":"./assets/img/image0.jpg",
     "song": "",
     "juges": "0",
     "musicians": "0",
