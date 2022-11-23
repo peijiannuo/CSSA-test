@@ -1,0 +1,110 @@
+/* Whole page */
+.container {
+    /* padding: 10px; */
+  }
+  
+  .background-color {
+    background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  }
+  
+  /* title */
+  .x-font {
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    font-size: 4rem;
+  }
+  
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+    -moz-animation: glow 0.5s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  
+  
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* every row */
+  
+  .row {
+    margin: 30px;
+  }
+  
+  /* Card */
+  
+  .card {
+    flex-direction: row;
+    padding: 10px;
+    font-family: 'ZCOOL XiaoWei', sans-serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+    height: 5rem;
+    margin: auto;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+  }
+  
+  .card img {
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+  }
+  
+  .col-12{
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  
+  .card-body{
+    margin: auto;
+  }
+  
+  .score-card {
+    display: inline-flex;
+  }
+  
+  /* first place card */
+  .first-card{
+    background-color: white;
+  }
+  .first-card{
+    background-color: yellow;
+  }
+  
+  
+  /* second place card */
+  .second-card {
+    font-size: 1.5rem;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  

@@ -1,5 +1,7 @@
 function win(card){
   $("."+card).addClass("win")
+  $("."+card+" .btn").addClass("winBtn")
+  $("."+card+" .card-img-top").addClass("winImg")
 }
 function lost(card){
   $("."+card).addClass("lost")
@@ -20,10 +22,6 @@ function load_data(){
   
     $('.score').each(function(i, obj) {
       $( this ).text(student_data[i].total)
-    });
-  
-    $('.col-12').each(function(i, obj) {
-      $( this ).attr('id',i);
     });
 
     $('.card-img-top').each(function(i, obj) {

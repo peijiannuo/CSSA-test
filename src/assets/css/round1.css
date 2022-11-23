@@ -1,9 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+
 .background-color {
   background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
 }
 
-.container{
-  width: 100%;
+.container1{
+padding: 0 8%;
 }
 
 .glow {
@@ -26,26 +28,103 @@
   }
 }
 
+.vs-box {
+	/* margin: 50px auto; */
+	max-width: 1000px;
+	height: 120px;
+
+	background-position: center center;
+	background-size: 1000px 200px;
+	border-radius: 10px;
+	font-family: 'Akronim';
+	overflow: hidden;
+  text-align: center;
+	vertical-align: middle;
+
+}
+.vs-box:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.vs {
+	display: inline-block;
+	margin: 0;
+
+    color: rgb(255, 115, 0);
+    font-size: 100px;
+	line-height: 50px;
+	min-width: 50px;
+	outline: none;
+	vertical-align: middle;
+    
+	text-shadow:
+        0 3px 20px red,
+        0 0 20px red,
+		0 0 10px orange,
+		4px -5px 6px yellow,
+		-4px -10px 10px yellow,
+		0 -10px 30px yellow;
+	animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes vs {
+	0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 0 10px orange,
+		0 0 0 yellow,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		4px -10px 10px yellow; }
+	25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+		0 0 20px orange,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		3px -10px 10px yellow,
+		-4px -15px 20px yellow; }
+	50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 -5px 10px orange,
+		-2px -5px 5px yellow,
+		3px -10px 10px yellow,
+		-4px -15px 20px yellow,
+		2px -20px 30px rgba(255,255,0,0.5); }
+	75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 -5px 10px orange,
+		3px -5px 5px yellow,
+		-4px -10px 10px yellow,
+		2px -20px 30px rgba(255,255,0,0.5),
+		0px -25px 40px rgba(255,255,0,0)}
+	100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+		0 0 10px orange,
+		0 0 0 yellow,
+		0 0 5px yellow,
+		-2px -5px 5px yellow,
+		4px -10px 10px yellow; }
+}
+
+
+
 /* every row */
 .row {
-  margin: 40px;
+  margin: 80px;
 }
 
 /* Card */
 .card {
   flex-direction: row;
   border-radius: 40px;
-  height: 80px;
+  height: 100px;
   width: 80%;
   margin: auto;
-  font-size: 25px;
+  font-size: 40px;
   background-color: rgb(255, 255, 255);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn{
-  font-size: 25px;
+  font-size: 30px;
   margin: auto;
   padding: 0;
 }
@@ -73,9 +152,10 @@
 
 .win{
   width: auto;
-  height: 100px;
+  margin: auto;
+  height: 120px;
   width: 100%;
-  font-size: 35px;
+  font-size: 50px;
   transition:1s;
 }
 
@@ -83,4 +163,19 @@
   background-color: #808080;
   opacity: 0.5;
   transition:1s;
+}
+
+.vs{
+  font-size: 80px;
+  font-family: 'Rubik Distressed', cursive;
+  letter-spacing: 10px;
+}
+.winBtn{
+  font-size: 90%;
+  transition:1s;
+}
+.winImg{
+  transform: scale(1.5);
+  transition:1.2s;
+
 }
