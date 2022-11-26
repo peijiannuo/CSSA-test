@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
 
 .background-color {
-  background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  background-image: url("/src/assets/img/background.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .container1{

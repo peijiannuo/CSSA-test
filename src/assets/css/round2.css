@@ -4,7 +4,10 @@
   }
   
   .background-color {
-    background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    background-image: url("/src/assets/img/background.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
   }
   
   /* title */
@@ -54,7 +57,7 @@
     font-family: 'ZCOOL XiaoWei', sans-serif;
     font-size: 1rem;
     border-radius: 2rem;
-    height: 5rem;
+    height: 90px;
     margin: auto;
   }
   
@@ -70,41 +73,43 @@
   
   .col-12{
     position: relative;
-    margin-bottom: 0.5rem;
+    margin-bottom: 25px;
   }
-  
-  
   
   .card-body{
     margin: auto;
   }
   
-  .score-card {
-    display: inline-flex;
-  }
-  
-  /* first place card */
-  .first-card{
-    background-color: white;
-  }
-  .first-card{
-    background-color: yellow;
-  }
-  
-  
-  /* second place card */
-  .second-card {
-    font-size: 1.5rem;
-  }
-  
-  a{
-    text-decoration: none;
-    color: white;
-  }
-  a:hover{
-    text-decoration: none;
-    color: white;
-  }
+.player-1{
+  height: 140px;
+}
+.player-2{
+  height: 120px;
+}
+.player-3{
+  height: 100px;
+}
+
+.name-card{
+  font-size: 27px;
+}
+
+.song-card{
+  font-size: 27px;
+}
+
+.score-card{
+  font-size: 27px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
   
   
   

@@ -23,3 +23,7 @@ function load_data(){
     localStorage.setItem("displayData", student_data);
 
 }
+
+function display(ranking){
+    console.log(ranking)
+}
