@@ -24,6 +24,34 @@ function load_data(){
 
 }
 
+function append_data(cardNumber){
+  student_data = localStorage.getItem("newRanking");
+  student_data = JSON.parse(student_data);
+  console.log(student_data);
+
+  $('.player-'+cardNumber+' .student_name').fadeOut(500, function() {
+    $(this).text(student_data[cardNumber].name).fadeIn(500);
+  }); 
+  $('.player-'+cardNumber+' .song-name').fadeOut(500, function() {
+    $(this).text(student_data[cardNumber].song).fadeIn(500);
+  });
+  $('.player-'+cardNumber+' .score').fadeOut(500, function() {
+    $(this).text(student_data[cardNumber].total).fadeIn(500);
+  });
+
+  if (cardNumber == 1){
+    window.open('/src/separateRankingPage/firstPlace.html', '_blank');
+  }else if (cardNumber == 2) {
+    window.open('/src/separateRankingPage/secondPlace.html', '_blank');
+  }else if (cardNumber == 3) {
+    window.open('/src/separateRankingPage/thirdPlace.html', '_blank');
+  }else{
+
+  }
+  
+}
+
 function display(ranking){
-    console.log(ranking)
+    append_data(ranking)
+    // console.log(ranking)
 }
