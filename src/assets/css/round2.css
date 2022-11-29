@@ -4,10 +4,11 @@
   }
   
   .background-color {
-    background-image: url("/src/assets/img/background.jpg");
+    /* background-image: url("/src/assets/img/background.jpg"); */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: black;
   }
   
   /* title */
