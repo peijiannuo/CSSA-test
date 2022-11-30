@@ -13,7 +13,7 @@ body {
 }
 
 .container1{
-padding: 0 8%;
+padding: 0 5%;
 }
 
 .glow {
@@ -122,7 +122,7 @@ padding: 0 8%;
 .card {
   flex-direction: row;
   border-radius: 40px;
-  height: 100px;
+  height: 110px;
   width: 80%;
   margin: auto;
   font-size: 40px;
@@ -133,10 +133,14 @@ padding: 0 8%;
 
 .cardLeft{
   background-image: linear-gradient(to right, #2986CC, #1C5D8E ,#081A28, black 99%);
+  border-color: black;
+  border-bottom-width: medium;
 }
 
 .cardRight{
   background-image: linear-gradient(to right, black,#491410, #AA2E25, #F44336);
+  border-width: 5px;
+  border-color: black;
 }
 
 .btn{
@@ -152,8 +156,8 @@ padding: 0 8%;
 }
 
 .card img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   margin: auto;
   border-radius: 100%;
 }
@@ -178,7 +182,7 @@ padding: 0 8%;
 
 .lost{
   background-color: #808080;
-  opacity: 0.5;
+  opacity: 0.25;
   transition:1s;
 }
 
