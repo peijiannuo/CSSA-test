@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
 
+body {
+  font-family: 'Poppins';font-size: 22px;
+}
+
 .background-color {
   /* background-image: url("/src/assets/img/background.jpg"); */
   background-position: center; /* Center the image */
@@ -122,15 +126,24 @@ padding: 0 8%;
   width: 80%;
   margin: auto;
   font-size: 40px;
-  background-color: rgb(255, 255, 255);
   padding-left: 15px;
   padding-right: 15px;
+  color: white;
+}
+
+.cardLeft{
+  background-image: linear-gradient(to right, #2986CC, #1C5D8E ,#081A28, black 99%);
+}
+
+.cardRight{
+  background-image: linear-gradient(to right, black,#491410, #AA2E25, #F44336);
 }
 
 .btn{
   font-size: 30px;
   margin: auto;
   padding: 0;
+  color: white;
 }
 
 .btn:focus {

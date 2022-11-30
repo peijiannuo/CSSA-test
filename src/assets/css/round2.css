@@ -52,34 +52,35 @@
   
   /* Card */
   
-  .card {
-    flex-direction: row;
-    padding: 10px;
-    font-family: 'ZCOOL XiaoWei', sans-serif;
-    font-size: 1rem;
-    border-radius: 2rem;
-    height: 90px;
-    margin: auto;
-  }
-  
-  .profile-img {
-    border-radius: 50%;
-  }
-  
-  .card img {
-    width: 4rem;
-    height: 4rem;
-    margin: auto;
-  }
-  
-  .col-12{
-    position: relative;
-    margin-bottom: 25px;
-  }
-  
-  .card-body{
-    margin: auto;
-  }
+.card {
+  flex-direction: row;
+  padding: 10px;
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  font-size: 1rem;
+  border-radius: 2rem;
+  height: 90px;
+  margin: auto;
+}
+
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.card img {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+}
+
+.col-12{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.card-body{
+  margin: auto;
+}
   
 .player-1{
   height: 140px;
