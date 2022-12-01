@@ -29,6 +29,9 @@ function append_data(cardNumber){
   student_data = JSON.parse(student_data);
   console.log(student_data);
 
+  $('.player-'+cardNumber+' .card-img-top').fadeOut(500, function() {
+    $(this).attr('src',student_data[cardNumber].img).fadeIn(500);
+  });
   $('.player-'+cardNumber+' .student_name').fadeOut(500, function() {
     $(this).text(student_data[cardNumber].name).fadeIn(500);
   }); 

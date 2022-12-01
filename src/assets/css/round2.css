@@ -85,6 +85,23 @@
 .player-1{
   height: 140px;
 }
+
+.first-col{
+  animation: 1000ms ease-in-out infinite color-change;
+}
+
+@keyframes color-change{
+  0% {
+    background-image: linear-gradient(to right, #faa525,#e30df5);
+  }
+  50% {
+    background-image: linear-gradient(to right, #e30df5,#faa525);
+  }
+  100%{
+    background-image: linear-gradient(to right, #faa525,#e30df5);
+  }
+}
+
 .player-2{
   height: 120px;
 }

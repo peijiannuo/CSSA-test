@@ -1,0 +1,54 @@
+/* Whole page */
+
+
+body {
+  font-family: 'Poppins';font-size: 22px;
+}
+
+.background-color {
+  background-color: black;
+}
+
+/* title */
+.x-font {
+  font-family: 'ZCOOL XiaoWei', sans-serif;
+  font-size: 4rem;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* infor */
+.row{
+  color: white;
+}
+
+.player-img{
+  border-radius: 50%;
+}
+  
+
