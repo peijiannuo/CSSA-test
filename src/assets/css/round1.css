@@ -1,23 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
 
 body {
-  font-family: 'Poppins';font-size: 22px;
+  font-family: "Poppins";
+  font-size: 30px;
 }
 
 .background-color {
-  /* background-image: url("/src/assets/img/background.jpg"); */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
   background-color: black;
 }
 
-.container1{
-padding: 0 5%;
+.container-body {
+  padding: 40px;
 }
 
 .glow {
   font-size: 80px;
+  margin-top: 40px;
   color: #fff;
   text-align: center;
   -webkit-animation: glow 0.5s ease-in-out infinite alternate;
@@ -36,123 +34,26 @@ padding: 0 5%;
   }
 }
 
-.vs-box {
-	/* margin: 50px auto; */
-	max-width: 1000px;
-	height: 120px;
-
-	background-position: center center;
-	background-size: 1000px 200px;
-	border-radius: 10px;
-	font-family: 'Akronim';
-	overflow: hidden;
-  text-align: center;
-	vertical-align: middle;
-
-}
-.vs-box:before {
-	content: '';
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-.vs {
-	display: inline-block;
-	margin: 0;
-
-    color: rgb(255, 115, 0);
-    font-size: 100px;
-	line-height: 50px;
-	min-width: 50px;
-	outline: none;
-	vertical-align: middle;
-    
-	text-shadow:
-        0 3px 20px red,
-        0 0 20px red,
-		0 0 10px orange,
-		4px -5px 6px yellow,
-		-4px -10px 10px yellow,
-		0 -10px 30px yellow;
-	animation: 2s Blazing infinite alternate linear;
-}
-
-@keyframes vs {
-	0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-		0 0 10px orange,
-		0 0 0 yellow,
-		0 0 5px yellow,
-		-2px -5px 5px yellow,
-		4px -10px 10px yellow; }
-	25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
-		0 0 20px orange,
-		0 0 5px yellow,
-		-2px -5px 5px yellow,
-		3px -10px 10px yellow,
-		-4px -15px 20px yellow; }
-	50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-		0 -5px 10px orange,
-		-2px -5px 5px yellow,
-		3px -10px 10px yellow,
-		-4px -15px 20px yellow,
-		2px -20px 30px rgba(255,255,0,0.5); }
-	75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-		0 -5px 10px orange,
-		3px -5px 5px yellow,
-		-4px -10px 10px yellow,
-		2px -20px 30px rgba(255,255,0,0.5),
-		0px -25px 40px rgba(255,255,0,0)}
-	100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-		0 0 10px orange,
-		0 0 0 yellow,
-		0 0 5px yellow,
-		-2px -5px 5px yellow,
-		4px -10px 10px yellow; }
-}
-
-
-
-/* every row */
 .row {
-  margin: 80px;
+  margin: 40px;
 }
 
-/* Card */
+.vs img {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
 .card {
   flex-direction: row;
   border-radius: 40px;
-  height: 110px;
-  width: 80%;
+  height: 80px;
+  width: 480px;
   margin: auto;
   font-size: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: white;
-}
-
-.cardLeft{
-  background-image: linear-gradient(to right, #2986CC, #1C5D8E ,#081A28, black 99%);
-  border-color: black;
-  border-bottom-width: medium;
-}
-
-.cardRight{
-  background-image: linear-gradient(to right, black,#491410, #AA2E25, #F44336);
-  border-width: 5px;
-  border-color: black;
-}
-
-.btn{
-  font-size: 30px;
-  margin: auto;
-  padding: 0;
-  color: white;
-}
-
-.btn:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 .card img {
@@ -164,39 +65,48 @@ padding: 0 5%;
 
 .card-body {
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-.vs-box{
+.cardLeft {
+  background-image: linear-gradient(to right, #2986cc, #1c5d8e, #081a28, black);
+  border-width: 0px;
+  border-color: black;
+}
+
+.cardRight {
+  background-image: linear-gradient(to right, black, #491410, #aa2e25, #f44336);
+  border-width: 0px;
+  border-color: black;
+}
+
+.btn {
+  font-size: 30px;
   margin: auto;
+  padding: 0;
+  color: white;
 }
 
-.win{
-  width: auto;
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.win {
+  width: 640px;
   margin: auto;
-  height: 120px;
-  width: 100%;
-  font-size: 50px;
-  transition:1s;
+  transition: 0.5s;
 }
 
-.lost{
-  background-color: #808080;
+.win-btn {
+  transition: 0.5s;
+}
+
+.win-img {
+  transition: 0.5s;
+}
+
+.lose {
   opacity: 0.25;
-  transition:1s;
-}
-
-.vs{
-  font-size: 80px;
-  font-family: 'Rubik Distressed', cursive;
-  letter-spacing: 10px;
-}
-.winBtn{
-  font-size: 90%;
-  transition:1s;
-}
-.winImg{
-  transform: scale(1.5);
-  transition:1.2s;
-
+  transition: 0.5s;
 }
