@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Lillian Zhou",
-    "img":"/src/assets/img/image0.jpg",
+    "img":"/src/assets/img/image0.jpeg",
     "song": "易燃易爆炸",
     "juges": "0",
     "musicians": "0",
@@ -14,7 +14,7 @@
   {
     "id": 1,
     "name": "Charlie",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image1.jpeg",
     "song": "陪你去流浪",
     "juges": "0",
     "musicians": "0",
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "name": "宋量迹",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image3.jpeg",
     "song": "黑色柳丁",
     "juges": "0",
     "musicians": "0",
@@ -50,7 +50,7 @@
   {
     "id": 4,
     "name": "安德烈 Andrew",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image4.jpeg",
     "song": "麒麟",
     "juges": "0",
     "musicians": "0",
@@ -62,7 +62,7 @@
   {
     "id": 5,
     "name": "郭懿娇",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image5.jpeg",
     "song": "Legends Never Die",
     "juges": "0",
     "musicians": "0",
@@ -86,7 +86,7 @@
   {
     "id": 7,
     "name": "Steve 孙德泓",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image7.jpeg",
     "song": "Golden Hour",
     "juges": "0",
     "musicians": "0",
@@ -110,7 +110,7 @@
   {
     "id": 9,
     "name": "Lexi 李成乐兮",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image9.jpeg",
     "song": "你要跳舞吗",
     "juges": "0",
     "musicians": "0",
