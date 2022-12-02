@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
 
 body {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 .container-body {
-  padding: 40px;
+  padding: 20px;
 }
 
 .glow {
@@ -18,9 +18,9 @@ body {
   margin-top: 40px;
   color: #fff;
   text-align: center;
-  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  /* -webkit-animation: glow 0.5s ease-in-out infinite alternate;
   -moz-animation: glow 0.5s ease-in-out infinite alternate;
-  animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate; */
 }
 
 @-webkit-keyframes glow {
@@ -39,8 +39,8 @@ body {
 }
 
 .vs img {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   margin: auto;
 }
 
@@ -48,9 +48,9 @@ body {
   flex-direction: row;
   border-radius: 40px;
   height: 80px;
-  width: 480px;
-  margin: auto;
-  font-size: 40px;
+  width: 600px;
+  /* margin: auto; */
+  font-size: 30px;
   padding-left: 5px;
   padding-right: 5px;
   color: white;
@@ -65,7 +65,7 @@ body {
 
 .card-body {
   margin: auto;
-  padding: 10px;
+  padding: 15px;
 }
 
 .cardLeft {
@@ -81,7 +81,7 @@ body {
 }
 
 .btn {
-  font-size: 30px;
+  font-size: 27px;
   margin: auto;
   padding: 0;
   color: white;
@@ -93,20 +93,20 @@ body {
 }
 
 .win {
-  width: 640px;
-  margin: auto;
-  transition: 0.5s;
+  width: 670px;
+  /* margin: auto; */
+  transition: 1s;
 }
 
 .win-btn {
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .win-img {
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .lose {
   opacity: 0.25;
-  transition: 0.5s;
+  transition: 1s;
 }

@@ -31,3 +31,7 @@ function load_data() {
   student_data = JSON.stringify(student_data);
   localStorage.setItem("displayData", student_data);
 }
+
+function close_window(){
+  window.close();
+}

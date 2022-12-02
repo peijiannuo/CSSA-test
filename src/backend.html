@@ -49,10 +49,6 @@
             <input type="number" id="number" class="juges_score" value="0" />
           </p>
           <p>
-            <label for="number">评委 5</label>
-            <input type="number" id="number" class="juges_score" value="0" />
-          </p>
-          <p>
             <label for="number">评委总分</label>
             <label id="juges_score_label">0</label>
           </p>
@@ -87,15 +83,6 @@
           </p>
           <p>
             <label for="number">原创音乐人 4</label>
-            <input
-              type="number"
-              id="number"
-              class="musicians_score"
-              value="0"
-            />
-          </p>
-          <p>
-            <label for="number">原创音乐人 5</label>
             <input
               type="number"
               id="number"
@@ -227,28 +214,32 @@
 
         </ul>
       </div>   
-      <div>
-        <label for="text" style="d-inline-flex">选手：</label>
+      <div class="d-inline-flex">
+        <label for="text">选手：</label>
         <p id="selected-name"></p>
         <p>-</p>
         <p id="selected-name-id"></p>
-        <button type="button" class="btn btn-info">
-          晋级
-        </button>
-        <button type="button" class="btn btn-danger">
-          淘汰
-        </button>        
+        <div>
+          <button type="button" class="btn btn-info">
+            晋级
+          </button>
+          <button type="button" class="btn btn-danger">
+            淘汰
+          </button>             
+        </div>
+     
       </div>     
-
-      <button type="button" class="btn btn-primary" onclick="calculate()">
-        计算
-      </button>
-      <button type="button" class="btn btn-primary" onclick="load_local()">
-        刷新
-      </button>      
-      <button type="button" class="btn btn-primary" onclick="reset_data()">
-        重置
-      </button>
+      <div>
+        <button type="button" class="btn btn-primary" onclick="calculate()">
+          计算
+        </button>
+        <button type="button" class="btn btn-primary" onclick="load_local()">
+          刷新
+        </button>      
+        <button type="button" class="btn btn-primary" onclick="reset_data()">
+          重置
+        </button>
+      </div>
 
     </div>
     <script src="/src/assets/js/backend.js"></script>

@@ -1,9 +1,9 @@
 [
   {
     "id": 0,
-    "name": "Tim",
-    "img":"./assets/img/image0.jpg",
-    "song": "李白",
+    "name": "Lillian Zhou",
+    "img":"/src/assets/img/image0.jpg",
+    "song": "易燃易爆炸",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -13,9 +13,9 @@
 
   {
     "id": 1,
-    "name": "Mario",
-    "img":"./assets/img/image1.jpg",
-    "song": "告白气球",
+    "name": "Charlie",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "陪你去流浪",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -25,9 +25,9 @@
 
   {
     "id": 2,
-    "name": "Jason",
-    "img":"./assets/img/image0.jpg",
-    "song": "玫瑰少年",
+    "name": "Carol An",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "残酷月光",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -37,9 +37,9 @@
 
   {
     "id": 3,
-    "name": "Mario1",
-    "img":"./assets/img/image0.jpg",
-    "song": "私奔到月球",
+    "name": "宋量迹",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "黑色柳丁",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -49,9 +49,9 @@
 
   {
     "id": 4,
-    "name": "Mario2",
-    "img":"./assets/img/image0.jpg",
-    "song": "小情歌",
+    "name": "安德烈 Andrew",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "麒麟",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -61,9 +61,9 @@
 
   {
     "id": 5,
-    "name": "Mario3",
-    "img":"./assets/img/image0.jpg",
-    "song": "CUFF IT",
+    "name": "郭懿娇",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "Legends Never Die",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -73,9 +73,9 @@
 
   {
     "id": 6,
-    "name": "Mario4",
-    "img":"./assets/img/image0.jpg",
-    "song": "As It Was",
+    "name": "Jacky",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "大鱼",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -85,9 +85,9 @@
 
   {
     "id": 7,
-    "name": "Mario5",
-    "img":"./assets/img/image0.jpg",
-    "song": "海阔天空",
+    "name": "Steve 孙德泓",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "Golden Hour",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -97,9 +97,9 @@
 
   {
     "id": 8,
-    "name": "Mario6",
-    "img":"./assets/img/image0.jpg",
-    "song": "红日",
+    "name": "Bowen Zheng",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "Easy on me",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
@@ -109,9 +109,9 @@
 
   {
     "id": 9,
-    "name": "Mario7",
-    "img":"./assets/img/image0.jpg",
-    "song": " golden hour",
+    "name": "Lexi 李成乐兮",
+    "img":"/src/assets/img/image1.jpg",
+    "song": "你要跳舞吗",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
