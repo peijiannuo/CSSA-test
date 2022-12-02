@@ -26,7 +26,7 @@
   {
     "id": 2,
     "name": "Carol An",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image2.jpeg",
     "song": "残酷月光",
     "juges": "0",
     "musicians": "0",
@@ -74,7 +74,7 @@
   {
     "id": 6,
     "name": "Jacky",
-    "img":"/src/assets/img/image1.jpg",
+    "img":"/src/assets/img/image6.jpeg",
     "song": "大鱼",
     "juges": "0",
     "musicians": "0",

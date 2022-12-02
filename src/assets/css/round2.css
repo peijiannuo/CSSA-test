@@ -17,7 +17,7 @@
   
   /* title */
   .x-font {
-    font-family: 'ZCOOL XiaoWei', sans-serif;
+    /* font-family: 'ZCOOL XiaoWei', sans-serif; */
     font-size: 4rem;
   }
   
@@ -93,7 +93,8 @@
 }
 
 .first-col{
-  animation: 1200ms ease-in-out infinite color-change;
+  /* animation: 1200ms ease-in-out infinite color-change; */
+  background-image: linear-gradient(to right, #faa525,#e30df5);
 }
 
 @keyframes color-change{
