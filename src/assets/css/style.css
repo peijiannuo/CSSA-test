@@ -1,5 +1,6 @@
 .background-color {
-  background-image: linear-gradient(to bottom, #6dd5ed, #2193b0);
+  background-image: url("../img/index_background.png");
+  background-size: cover;
 }
 
 /* title */
@@ -10,7 +11,7 @@
 
 .glow {
   font-size: 80px;
-  color: #fff;
+  color: white;
   text-align: center;
   -webkit-animation: glow 0.5s ease-in-out infinite alternate;
   -moz-animation: glow 0.5s ease-in-out infinite alternate;
@@ -95,4 +96,9 @@ a {
 a:hover {
   text-decoration: none;
   color: white;
+}
+
+
+.backend-btn{
+  font-size: 4rem;
 }

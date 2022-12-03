@@ -25,24 +25,44 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/src/assets/css/style.css" />
   </head>
 
-  <body>
+  <body class="background-color">
     <div class="container title">
-      <h1 class="text-center x-font glow">心动的声音打分系统</h1>
+      <h1 class="text-center x-font glow">
+        <button type="button" class="btn backend-btn" onclick="get_data()">
+          <a href="./backend.html" target="_blank">
+               心动的声音总决赛
+          </a>
+        </button>
+      </h1>
     </div>
 
     <div class="container">
-      <button type="button" class="btn btn-primary" onclick="get_data()">
-        <a href="./backend.html" target="_blank">启动后端</a>
-      </button>
-      <button type="button" class="btn btn-primary">
-        <a href="./round1.html" target="_blank">第一轮</a>
-      </button>
-      <button type="button" class="btn btn-primary">
-        <a href="./round2.html" target="_blank">第二轮</a>
-      </button>
+      <div class="row">
+        <div class="col-12">
+          <button type="button" class="btn" onclick="get_data()">
+            <a href="./backend.html" target="_blank">
+                      
+            </a>
+          </button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn">
+            <a href="./round1.html" style="color: black;" target="_blank">
+              -
+            </a>
+          </button>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn">
+            <a href="./round2.html" target="_blank">
+              -
+            </a>
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="./assets/js/frontend.js"></script>

@@ -36,7 +36,7 @@ function append_data(cardNumber){
     $(this).text(student_data[cardNumber].name).fadeIn(500);
   }); 
   $('.player-'+cardNumber+' .song-name').fadeOut(500, function() {
-    $(this).text(student_data[cardNumber].song).fadeIn(500);
+    $(this).text(student_data[cardNumber].songTwo).fadeIn(500);
   });
   $('.player-'+cardNumber+' .score').fadeOut(500, function() {
     $(this).text(student_data[cardNumber].total).fadeIn(500);
