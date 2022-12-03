@@ -27,35 +27,38 @@
   <body class="background-color" onload="load_data()">
     <h1 class="text-center title">心动的声音总决赛第一轮</h1>
 
-    <div class="body">
-      <div class="row justify-content-center">
-        <div class="col-5 justify-content-end d-flex">
-          <div class="card player-1 cardLeft">
-            <img class="card-img-top d-inline-flex" alt="..." />
-            <div class="card-body d-inline-flex justify-content-between">
-              <div class="text-center d-inline-flex">
-                <button
-                  class="btn d-inline-flex"
+    <div class="row justify-content-center">
+      <div class="col-5 justify-content-end d-flex">
+        <div class="card player-1 cardLeft">
+          <img
+            src="./assets/img/image1.jpg"
+            class="card-img-top d-inline-flex"
+            alt="..."
+          />
+          <div class="card-body d-inline-flex justify-content-between">
+            <div class="text-center d-inline-flex">
+              <button
+                class="btn d-inline-flex"
+                type="button"
+                onclick="win('player-1')"
+              >
+                <p class="studentName">Name</p>
+              </button>
+            </div>
+            <div class="text-center d-inline-flex">
+              <button class="btn d-inline-flex">
+                <p
+                  class="d-inline-flex songName"
                   type="button"
-                  onclick="win('player-1')"
+                  onclick="lose('player-1')"
                 >
-                  <p class="studentName">Name</p>
-                </button>
-              </div>
-              <div class="text-center d-inline-flex">
-                <button class="btn d-inline-flex">
-                  <p
-                    class="d-inline-flex songName"
-                    type="button"
-                    onclick="lose('player-1')"
-                  >
-                    Song
-                  </p>
-                </button>
-              </div>
+                  Song
+                </p>
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
         <div class="col-1 vs text-center">
           <img src="./assets/img/vs.png" class="d-inline-flex" alt="..." />
@@ -83,7 +86,11 @@
                 </button>
               </div>
             </div>
-            <img class="card-img-top d-inline-flex" alt="..." />
+            <img
+              src="./assets/img/image1.jpg"
+              class="card-img-top d-inline-flex"
+              alt="..."
+            />
           </div>
         </div>
       </div>
@@ -334,7 +341,6 @@
               alt="..."
             />
           </button>
-          <!-- <img src="./assets/img/vs.png" class="d-inline-flex" alt="..." /> -->
         </div>
 
         <div class="col-5">
