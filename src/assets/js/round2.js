@@ -42,15 +42,15 @@ function append_data(cardNumber){
     $(this).text(student_data[cardNumber].total).fadeIn(500);
   });
 
-  if (cardNumber == 1){
-    window.open('/src/separateRankingPage/firstPlace.html', '_blank');
-  }else if (cardNumber == 2) {
-    window.open('/src/separateRankingPage/secondPlace.html', '_blank');
-  }else if (cardNumber == 3) {
-    window.open('/src/separateRankingPage/thirdPlace.html', '_blank');
-  }else{
+  // if (cardNumber == 1){
+  //   window.open('/src/separateRankingPage/firstPlace.html', '_blank');
+  // }else if (cardNumber == 2) {
+  //   window.open('/src/separateRankingPage/secondPlace.html', '_blank');
+  // }else if (cardNumber == 3) {
+  //   window.open('/src/separateRankingPage/thirdPlace.html', '_blank');
+  // }else{
 
-  }
+  // }
   
 }
 

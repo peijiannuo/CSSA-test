@@ -88,7 +88,7 @@
   margin: auto;
 }
   
-.player-1{
+.player-0{
   height: 140px;
 }
 
@@ -109,10 +109,10 @@
   }
 }
 
-.player-2{
+.player-1{
   height: 120px;
 }
-.player-3{
+.player-2{
   height: 100px;
 }
 
