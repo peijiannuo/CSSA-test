@@ -2,120 +2,120 @@
   {
     "id": 0,
     "name": "Lillian Zhou",
-    "img":"/src/assets/img/image0.jpeg",
-    "song": "易燃易爆炸",
+    "img": "/src/assets/img/image0.jpeg",
+    "song": "《易燃易爆炸》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":0
+    "ranking": 0
   },
 
   {
     "id": 1,
     "name": "Charlie",
-    "img":"/src/assets/img/image1.jpeg",
-    "song": "陪你去流浪",
+    "img": "/src/assets/img/image1.jpeg",
+    "song": "《陪你去流浪》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":1
+    "ranking": 1
   },
 
   {
     "id": 2,
     "name": "Carol An",
-    "img":"/src/assets/img/image2.jpeg",
-    "song": "残酷月光",
+    "img": "/src/assets/img/image2.jpeg",
+    "song": "《残酷月光》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":2
+    "ranking": 2
   },
 
   {
     "id": 3,
     "name": "宋量迹",
-    "img":"/src/assets/img/image3.jpeg",
-    "song": "黑色柳丁",
+    "img": "/src/assets/img/image3.jpeg",
+    "song": "《黑色柳丁》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":3
+    "ranking": 3
   },
 
   {
     "id": 4,
     "name": "安德烈 Andrew",
-    "img":"/src/assets/img/image4.jpeg",
-    "song": "麒麟",
+    "img": "/src/assets/img/image4.jpeg",
+    "song": "《麒麟》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":4
+    "ranking": 4
   },
 
   {
     "id": 5,
     "name": "郭懿娇",
-    "img":"/src/assets/img/image5.jpeg",
-    "song": "Legends Never Die",
+    "img": "/src/assets/img/image5.jpeg",
+    "song": "《Legends Never Die》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":5
+    "ranking": 5
   },
 
   {
     "id": 6,
     "name": "Jacky",
-    "img":"/src/assets/img/image6.jpeg",
-    "song": "大鱼",
+    "img": "/src/assets/img/image6.jpeg",
+    "song": "《大鱼》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":6
+    "ranking": 6
   },
 
   {
     "id": 7,
     "name": "Steve 孙德泓",
-    "img":"/src/assets/img/image7.jpeg",
-    "song": "Golden Hour",
+    "img": "/src/assets/img/image7.jpeg",
+    "song": "《Golden Hour》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":7
+    "ranking": 7
   },
 
   {
     "id": 8,
     "name": "Bowen Zheng",
-    "img":"/src/assets/img/image8.jpeg",
-    "song": "Easy on me",
+    "img": "/src/assets/img/image8.jpeg",
+    "song": "《Easy on me》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":8
+    "ranking": 8
   },
 
   {
     "id": 9,
     "name": "Lexi 李成乐兮",
-    "img":"/src/assets/img/image9.jpeg",
-    "song": "你要跳舞吗",
+    "img": "/src/assets/img/image9.jpeg",
+    "song": "《你要跳舞吗》",
     "juges": "0",
     "musicians": "0",
     "audience": "0",
     "total": "0",
-    "ranking":9
+    "ranking": 9
   }
 ]

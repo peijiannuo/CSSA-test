@@ -1,73 +1,70 @@
 /* Whole page */
 
+body {
+  font-family: "Poppins";
+  font-size: 22px;
+}
 
-  body {
-    font-family: 'Poppins';font-size: 22px;
+.background-color {
+  background-image: url("../img/background.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 1200px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* title */
+.x-font {
+  /* font-family: 'ZCOOL XiaoWei', sans-serif; */
+  font-size: 4rem;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
-  
-  .background-color {
-    /* background-color: black; */
-    background-image: url("../img/background.jpg"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 1200px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+  to {
+    text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-  
-  /* title */
-  .x-font {
-    /* font-family: 'ZCOOL XiaoWei', sans-serif; */
-    font-size: 4rem;
-  }
-  
-  .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 0.5s ease-in-out infinite alternate;
-    -moz-animation: glow 0.5s ease-in-out infinite alternate;
-    animation: glow 0.5s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-        0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  }
-  
-  
-  ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* every row */
-  
-  .row {
-    margin: 30px;
-  }
-  
-  /* Card */
-  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* every row */
+
+.row {
+  margin: 30px;
+}
+
+/* Card */
+
 .card {
   flex-direction: row;
   padding: 10px;
-  font-family: 'ZCOOL XiaoWei', sans-serif;
+  font-family: "ZCOOL XiaoWei", sans-serif;
   font-size: 1rem;
   border-radius: 2rem;
   height: 90px;
   margin: auto;
   color: white;
-  background-image: linear-gradient(to right, black,#1E1E1E, #343434);
+  background-image: linear-gradient(to right, black, #1e1e1e, #343434);
 }
-
 
 .profile-img {
   border-radius: 50%;
@@ -79,63 +76,60 @@
   margin: auto;
 }
 
-.col-12{
+.col-12 {
   position: relative;
   margin-bottom: 25px;
 }
 
-.card-body{
+.card-body {
   margin: auto;
 }
-  
-.player-0{
+
+.player-0 {
   height: 140px;
 }
 
-.first-col{
+.first-col {
   /* animation: 1200ms ease-in-out infinite color-change; */
-  background-image: linear-gradient(to right, #faa525,#e30df5);
+  background-image: linear-gradient(to right, #faa525, #e30df5);
 }
 
-@keyframes color-change{
+@keyframes color-change {
   0% {
-    background-image: linear-gradient(to right, #faa525,#e30df5);
+    background-image: linear-gradient(to right, #faa525, #e30df5);
   }
   50% {
-    background-image: linear-gradient(to right, #e30df5,#faa525);
+    background-image: linear-gradient(to right, #e30df5, #faa525);
   }
-  100%{
-    background-image: linear-gradient(to right, #faa525,#e30df5);
+  100% {
+    background-image: linear-gradient(to right, #faa525, #e30df5);
   }
 }
 
-.player-1{
+.player-1 {
   height: 120px;
 }
-.player-2{
+.player-2 {
   height: 100px;
 }
 
-.name-card{
+.name-card {
   font-size: 27px;
 }
 
-.song-card{
+.song-card {
   font-size: 27px;
 }
 
-.score-card{
+.score-card {
   font-size: 27px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
-a:hover{
+a:hover {
   text-decoration: none;
   color: white;
 }
-  
-  
-  

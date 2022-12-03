@@ -1,37 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Akronim);
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-}
-
 .background-color {
-  background-color: black;
+  background-image: url("../img/background1.png");
+  background-size: cover;
 }
 
-.container-body {
-  padding: 20px;
-}
-
-.glow {
-  font-size: 80px;
-  margin-top: 40px;
-  color: #fff;
+.title {
+  font-size: 72px;
+  margin-top: 60px;
+  color: white;
   text-align: center;
-  /* -webkit-animation: glow 0.5s ease-in-out infinite alternate;
-  -moz-animation: glow 0.5s ease-in-out infinite alternate;
-  animation: glow 0.5s ease-in-out infinite alternate; */
 }
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+.body {
+  margin-top: 60px;
 }
 
 .row {
@@ -41,72 +21,45 @@ body {
 .vs img {
   width: 90px;
   height: 90px;
-  margin: auto;
 }
 
 .card {
   flex-direction: row;
   border-radius: 40px;
   height: 80px;
-  width: 600px;
-  /* margin: auto; */
-  font-size: 30px;
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 480px;
   color: white;
 }
 
 .card img {
   width: 70px;
   height: 70px;
-  margin: auto;
+  margin: 5px;
   border-radius: 100%;
-}
-
-.card-body {
-  margin: auto;
-  padding: 15px;
 }
 
 .cardLeft {
   background-image: linear-gradient(to right, #2986cc, #1c5d8e, #081a28, black);
   border-width: 0px;
-  border-color: black;
 }
 
 .cardRight {
   background-image: linear-gradient(to right, black, #491410, #aa2e25, #f44336);
   border-width: 0px;
-  border-color: black;
 }
 
 .btn {
-  font-size: 27px;
-  margin: auto;
-  padding: 0;
+  font-size: 24px;
   color: white;
 }
 
-.btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 .win {
-  width: 670px;
-  /* margin: auto; */
-  transition: 1s;
-}
-
-.win-btn {
-  transition: 1s;
-}
-
-.win-img {
+  width: 560px;
   transition: 1s;
 }
 
 .lose {
+  width: 480px;
   opacity: 0.25;
   transition: 1s;
 }
