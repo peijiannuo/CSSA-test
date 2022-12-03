@@ -107,8 +107,12 @@
     "id": 8,
     "name": "Bowen Zheng",
     "img": "/src/assets/img/image8.jpeg",
+<<<<<<< HEAD
     "song": "《Easy on me》",
     "songTwo": "《If I》",
+=======
+    "song": "《Easy On Me》",
+>>>>>>> 8acb8e264726d7c6c2e16c1f6e976f4bb66f9e87
     "juges": "0",
     "musicians": "0",
     "audience": "0",
