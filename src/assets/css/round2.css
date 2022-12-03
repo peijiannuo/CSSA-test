@@ -1,25 +1,14 @@
-/* Whole page */
-
-body {
-  font-family: "Poppins";
-  font-size: 22px;
-}
-
 .background-color {
-  background-image: url("../img/background.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 1200px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("../img/background.jpg");
+  background-size: cover;
 }
 
-/* title */
-.x-font {
-  /* font-family: 'ZCOOL XiaoWei', sans-serif; */
-  font-size: 4rem;
+.title {
+  font-size: 72px;
+  margin-top: 60px;
+  color: white;
+  text-align: center;
 }
-
 .glow {
   font-size: 80px;
   color: #fff;
@@ -28,31 +17,6 @@ body {
   -moz-animation: glow 0.5s ease-in-out infinite alternate;
   animation: glow 0.5s ease-in-out infinite alternate;
 }
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 300px #fff, 0 0 300px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 300px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* every row */
-
-.row {
-  margin: 30px;
-}
-
-/* Card */
 
 .card {
   flex-direction: row;
@@ -90,7 +54,6 @@ ul {
 }
 
 .first-col {
-  /* animation: 1200ms ease-in-out infinite color-change; */
   background-image: linear-gradient(to right, #faa525, #e30df5);
 }
 
