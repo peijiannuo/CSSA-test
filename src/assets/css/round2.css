@@ -88,10 +88,11 @@
   font-size: 27px;
 }
 
-a {
+a{
   text-decoration: none;
   color: white;
 }
+
 a:hover {
   text-decoration: none;
   color: white;
