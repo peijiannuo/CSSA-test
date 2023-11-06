@@ -4,11 +4,23 @@
 }
 
 .title {
+
   font-size: 72px;
   margin-top: 60px;
-  color: white;
+  /* color: #000; */
   text-align: center;
+  font-family:'Smiley Sans Oblique';
+  font-weight:'400';
+  background: -webkit-linear-gradient(#F4CE14, #4C4C4C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
+
+article {
+  font-family:'Smiley Sans Oblique';
+  font-weight:'400'
+};
 
 .body {
   margin-top: 60px;
