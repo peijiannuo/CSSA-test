@@ -51,7 +51,7 @@ article {
   flex-direction: row;
   border-radius: 40px;
   height: 80px;
-  width: 480px;
+  width: 500px;
   color: white;
 }
 
@@ -73,17 +73,17 @@ article {
 }
 
 .btn {
-  font-size: 21px;
+  font-size: 22px;
   color: white;
 }
 
 .win {
-  width: 570px;
+  width: 580px;
   transition: 1s;
 }
 
 .lose {
-  width: 480px;
+  width: 500px;
   opacity: 0.25;
   transition: 1s;
 }
