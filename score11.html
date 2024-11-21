@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote Percentage</title>
+  <style>
+    .bar-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      height: 300px;
+      margin-top: 50px;
+      position: relative;
+    }
+    .bar {
+      width: 100px;
+      background: linear-gradient(45deg, #4CAF50, #76FF03);
+      position: relative;
+      transition: height 0.5s ease;
+    }
+    .bar span {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .bar-container::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Vote Percentage</h1>
+  <div id="percentages" style="text-align: center; margin-bottom: 20px;">
+    Candidate 1: <span id="candidate1-percentage">50%</span> | Candidate 2: <span id="candidate2-percentage">50%</span>
+  </div>
+  <div class="bar-container">
+    <div class="bar" id="bar1" style="height: 50%;">
+      <span id="bar1-label">50%</span>
+    </div>
+    <div class="bar" id="bar2" style="height: 50%;">
+      <span id="bar2-label">50%</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
