@@ -111,18 +111,6 @@
       background: #42A5F5;
     }
 
-    /* 删除或注释掉原来的通用颜色样式
-    .bar-front {
-      background: #4caf50;
-    }
-    .bar-side {
-      background: #2e7d32;
-    }
-    .bar-top {
-      background: #66bb6a;
-    }
-    */
-
     .percentage-container {
       display: flex;
       justify-content: space-around;
@@ -143,9 +131,7 @@
       <img src="./assets/img/image2.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
       <span style="font-size: 36px; font-weight: bold; color: white;">选手名字1</span>
     </div>
-    
     <span style="font-size: 48px; font-weight: bold; color: white;">PK</span>
-    
     <div style="display: flex; align-items: center; gap: 20px;">
       <span style="font-size: 36px; font-weight: bold; color: white;">选手名字2</span>
       <img src="./assets/img/image4.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
@@ -170,42 +156,7 @@
     <span id="candidate2-percentage" class="percentage-text">50%</span>
   </div>
 
-  <script>
-    function fetchVoteData() {
-      // 模拟数据
-      const candidate1 = Math.floor(Math.random() * 1000);
-      const candidate2 = Math.floor(Math.random() * 1000);
-      const totalVotes = candidate1 + candidate2;
-    
-      const candidate1Percentage = ((candidate1 / totalVotes) * 100).toFixed(1);
-      const candidate2Percentage = ((candidate2 / totalVotes) * 100).toFixed(1);
-    
-      // 更新百分比显示
-      document.getElementById('candidate1-percentage').textContent = `${candidate1Percentage}%`;
-      document.getElementById('candidate2-percentage').textContent = `${candidate2Percentage}%`;
-    
-      // 更新柱状图高度
-      document.getElementById('bar1').style.height = `${candidate1Percentage}%`;
-      document.getElementById('bar1-label').textContent = `${candidate1Percentage}%`;
-    
-      document.getElementById('bar2').style.height = `${candidate2Percentage}%`;
-      document.getElementById('bar2-label').textContent = `${candidate2Percentage}%`;
-    }
-    
-    // 每2秒更新一次模拟数据
-    setInterval(fetchVoteData, 10000);
-
-    // 添加键盘导航
-    document.addEventListener('keydown', function(event) {
-      // 左箭头键 (←) 跳转到上一页
-      if (event.key === 'ArrowLeft') {
-        window.location.href = 'score10.html';
-      }
-      // 右箭头键 (→) 跳转到下一页
-      else if (event.key === 'ArrowRight') {
-        window.location.href = 'score12.html';
-      }
-    });
-  </script>
+  <!-- 引入 JavaScript 文件 -->
+  <script src="score11.js"></script>
 </body>
 </html>
