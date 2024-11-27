@@ -3,55 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vote Percentage</title>
+  <title>3D Bar Chart</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-image: url('./assets/img/background1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    #percentages {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
     .bar-container {
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
       height: 300px;
-      margin-top: 50px;
       position: relative;
+      margin: 0 auto;
+      width: 600px;
+      perspective: 3000px;
+      transform-style: preserve-3d;
     }
+
     .bar {
       width: 100px;
-      background: linear-gradient(45deg, #4CAF50, #76FF03);
       position: relative;
-      transition: height 0.5s ease;
+      transform: rotateY(-20deg);
+      transform-origin: center;
+      transition: all 0.5s ease;
+      margin: 0 40px;
     }
+
+    .bar-front {
+      background: #4caf50;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 3;
+    }
+
+    .bar-side {
+      background: #2e7d32;
+      height: 100%;
+      width: 40px;
+      position: absolute;
+      right: -40px;
+      top: -20px;
+      transform: skewY(-45deg);
+      transform-origin: top;
+      z-index: 2;
+    }
+
+    .bar-top {
+      background: #66bb6a;
+      height: 40px;
+      width: calc(100% + 0px);
+      position: absolute;
+      top: -40px;
+      transform: skewX(-45deg);
+      transform-origin: bottom;
+      z-index: 1;
+    }
+
     .bar span {
       position: absolute;
-      top: -25px;
+      top: -60px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 16px;
       font-weight: bold;
+      color: transparent;
     }
-    .bar-container::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: #333;
+
+    /* 修改第一个柱状图(红色系) */
+    #bar1 .bar-front {
+      background: #ff4444;
+    }
+    #bar1 .bar-side {
+      background: #cc0000;
+    }
+    #bar1 .bar-top {
+      background: #ff6666;
+    }
+
+    /* 修改第二个柱状图(蓝色系) */
+    #bar2 .bar-front {
+      background: #2196F3;
+    }
+    #bar2 .bar-side {
+      background: #1565C0;
+    }
+    #bar2 .bar-top {
+      background: #42A5F5;
+    }
+
+    /* 删除或注释掉原来的通用颜色样式
+    .bar-front {
+      background: #4caf50;
+    }
+    .bar-side {
+      background: #2e7d32;
+    }
+    .bar-top {
+      background: #66bb6a;
+    }
+    */
+
+    .percentage-container {
+      display: flex;
+      justify-content: space-around;
+      width: 600px;
+      margin: 20px auto 0;
+    }
+
+    .percentage-text {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">Vote Percentage</h1>
-  <div id="percentages" style="text-align: center; margin-bottom: 20px;">
-    Candidate 1: <span id="candidate1-percentage">50%</span> | Candidate 2: <span id="candidate2-percentage">50%</span>
+  <div style="margin: 40px 0; display: flex; justify-content: center; align-items: center; gap: 40px;">
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <img src="./assets/img/image2.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+      <span style="font-size: 36px; font-weight: bold; color: white;">选手名字1</span>
+    </div>
+    
+    <span style="font-size: 48px; font-weight: bold; color: white;">PK</span>
+    
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <span style="font-size: 36px; font-weight: bold; color: white;">选手名字2</span>
+      <img src="./assets/img/image4.jpg" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+    </div>
   </div>
   <div class="bar-container">
     <div class="bar" id="bar1" style="height: 50%;">
+      <div class="bar-front"></div>
+      <div class="bar-side"></div>
+      <div class="bar-top"></div>
       <span id="bar1-label">50%</span>
     </div>
     <div class="bar" id="bar2" style="height: 50%;">
+      <div class="bar-front"></div>
+      <div class="bar-side"></div>
+      <div class="bar-top"></div>
       <span id="bar2-label">50%</span>
     </div>
   </div>
+  <div class="percentage-container">
+    <span id="candidate1-percentage" class="percentage-text">50%</span>
+    <span id="candidate2-percentage" class="percentage-text">50%</span>
+  </div>
 
-  <script src="script.js"></script>
+  <script>
+    function fetchVoteData() {
+      // 模拟数据
+      const candidate1 = Math.floor(Math.random() * 1000);
+      const candidate2 = Math.floor(Math.random() * 1000);
+      const totalVotes = candidate1 + candidate2;
+    
+      const candidate1Percentage = ((candidate1 / totalVotes) * 100).toFixed(1);
+      const candidate2Percentage = ((candidate2 / totalVotes) * 100).toFixed(1);
+    
+      // 更新百分比显示
+      document.getElementById('candidate1-percentage').textContent = `${candidate1Percentage}%`;
+      document.getElementById('candidate2-percentage').textContent = `${candidate2Percentage}%`;
+    
+      // 更新柱状图高度
+      document.getElementById('bar1').style.height = `${candidate1Percentage}%`;
+      document.getElementById('bar1-label').textContent = `${candidate1Percentage}%`;
+    
+      document.getElementById('bar2').style.height = `${candidate2Percentage}%`;
+      document.getElementById('bar2-label').textContent = `${candidate2Percentage}%`;
+    }
+    
+    // 每2秒更新一次模拟数据
+    setInterval(fetchVoteData, 10000);
+
+    // 添加键盘导航
+    document.addEventListener('keydown', function(event) {
+      // 左箭头键 (←) 跳转到上一页
+      if (event.key === 'ArrowLeft') {
+        window.location.href = 'score10.html';
+      }
+      // 右箭头键 (→) 跳转到下一页
+      else if (event.key === 'ArrowRight') {
+        window.location.href = 'score12.html';
+      }
+    });
+  </script>
 </body>
 </html>
